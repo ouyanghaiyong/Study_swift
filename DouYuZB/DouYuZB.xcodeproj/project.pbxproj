@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3019A20A1E5189BE000543A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2091E5189BE000543A0 /* AppDelegate.swift */; };
-		3019A20C1E5189BE000543A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A20B1E5189BE000543A0 /* ViewController.swift */; };
 		3019A20F1E5189BE000543A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3019A20D1E5189BE000543A0 /* Main.storyboard */; };
 		3019A2111E5189BE000543A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3019A2101E5189BE000543A0 /* Assets.xcassets */; };
 		3019A2141E5189BE000543A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3019A2121E5189BE000543A0 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		3019A2061E5189BE000543A0 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3019A2091E5189BE000543A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3019A20B1E5189BE000543A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3019A20E1E5189BE000543A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3019A2101E5189BE000543A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3019A2131E5189BE000543A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +95,8 @@
 		3019A2081E5189BE000543A0 /* DouYuZB */ = {
 			isa = PBXGroup;
 			children = (
+				3019A2391E518EFF000543A0 /* Classes */,
 				3019A2091E5189BE000543A0 /* AppDelegate.swift */,
-				3019A20B1E5189BE000543A0 /* ViewController.swift */,
 				3019A20D1E5189BE000543A0 /* Main.storyboard */,
 				3019A2101E5189BE000543A0 /* Assets.xcassets */,
 				3019A2121E5189BE000543A0 /* LaunchScreen.storyboard */,
@@ -123,6 +121,61 @@
 				3019A22B1E5189BE000543A0 /* Info.plist */,
 			);
 			path = DouYuZBUITests;
+			sourceTree = "<group>";
+		};
+		3019A2391E518EFF000543A0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3019A23F1E518EFF000543A0 /* Tools */,
+				3019A23D1E518EFF000543A0 /* Main */,
+				3019A23B1E518EFF000543A0 /* Home */,
+				3019A23A1E518EFF000543A0 /* Follow */,
+				3019A23C1E518EFF000543A0 /* Live */,
+				3019A23E1E518EFF000543A0 /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3019A23A1E518EFF000543A0 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		3019A23B1E518EFF000543A0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3019A23C1E518EFF000543A0 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		3019A23D1E518EFF000543A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3019A23E1E518EFF000543A0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3019A23F1E518EFF000543A0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3019A20C1E5189BE000543A0 /* ViewController.swift in Sources */,
 				3019A20A1E5189BE000543A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,11 +464,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huaban.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,11 +479,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huaban.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
