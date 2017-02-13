@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3019A20A1E5189BE000543A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2091E5189BE000543A0 /* AppDelegate.swift */; };
-		3019A20F1E5189BE000543A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3019A20D1E5189BE000543A0 /* Main.storyboard */; };
 		3019A2111E5189BE000543A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3019A2101E5189BE000543A0 /* Assets.xcassets */; };
-		3019A2141E5189BE000543A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3019A2121E5189BE000543A0 /* LaunchScreen.storyboard */; };
 		3019A21F1E5189BE000543A0 /* DouYuZBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A21E1E5189BE000543A0 /* DouYuZBTests.swift */; };
 		3019A22A1E5189BE000543A0 /* DouYuZBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2291E5189BE000543A0 /* DouYuZBUITests.swift */; };
+		3019A2511E51A884000543A0 /* HYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2501E51A884000543A0 /* HYMainViewController.swift */; };
+		3019A2531E51A8B8000543A0 /* HYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2521E51A8B8000543A0 /* HYHomeViewController.swift */; };
+		3019A2551E51A8D3000543A0 /* HYFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2541E51A8D3000543A0 /* HYFollowViewController.swift */; };
+		3019A2571E51A8DE000543A0 /* HYLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2561E51A8DE000543A0 /* HYLiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,7 @@
 /* Begin PBXFileReference section */
 		3019A2061E5189BE000543A0 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3019A2091E5189BE000543A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3019A20E1E5189BE000543A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3019A2101E5189BE000543A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3019A2131E5189BE000543A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3019A2151E5189BE000543A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3019A21A1E5189BE000543A0 /* DouYuZBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouYuZBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3019A21E1E5189BE000543A0 /* DouYuZBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouYuZBTests.swift; sourceTree = "<group>"; };
@@ -45,6 +45,10 @@
 		3019A2251E5189BE000543A0 /* DouYuZBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouYuZBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3019A2291E5189BE000543A0 /* DouYuZBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouYuZBUITests.swift; sourceTree = "<group>"; };
 		3019A22B1E5189BE000543A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3019A2501E51A884000543A0 /* HYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMainViewController.swift; sourceTree = "<group>"; };
+		3019A2521E51A8B8000543A0 /* HYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYHomeViewController.swift; sourceTree = "<group>"; };
+		3019A2541E51A8D3000543A0 /* HYFollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYFollowViewController.swift; sourceTree = "<group>"; };
+		3019A2561E51A8DE000543A0 /* HYLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYLiveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,9 @@
 		3019A2081E5189BE000543A0 /* DouYuZB */ = {
 			isa = PBXGroup;
 			children = (
-				3019A2391E518EFF000543A0 /* Classes */,
 				3019A2091E5189BE000543A0 /* AppDelegate.swift */,
-				3019A20D1E5189BE000543A0 /* Main.storyboard */,
+				3019A2391E518EFF000543A0 /* Classes */,
 				3019A2101E5189BE000543A0 /* Assets.xcassets */,
-				3019A2121E5189BE000543A0 /* LaunchScreen.storyboard */,
 				3019A2151E5189BE000543A0 /* Info.plist */,
 			);
 			path = DouYuZB;
@@ -139,6 +141,7 @@
 		3019A23A1E518EFF000543A0 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				3019A2541E51A8D3000543A0 /* HYFollowViewController.swift */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 		3019A23B1E518EFF000543A0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3019A2521E51A8B8000543A0 /* HYHomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -153,6 +157,7 @@
 		3019A23C1E518EFF000543A0 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				3019A2561E51A8DE000543A0 /* HYLiveViewController.swift */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 		3019A23D1E518EFF000543A0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3019A2501E51A884000543A0 /* HYMainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 		3019A1FE1E5189BE000543A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HY;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = ouyang;
@@ -285,9 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3019A2141E5189BE000543A0 /* LaunchScreen.storyboard in Resources */,
 				3019A2111E5189BE000543A0 /* Assets.xcassets in Resources */,
-				3019A20F1E5189BE000543A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3019A2531E51A8B8000543A0 /* HYHomeViewController.swift in Sources */,
+				3019A2511E51A884000543A0 /* HYMainViewController.swift in Sources */,
+				3019A2551E51A8D3000543A0 /* HYFollowViewController.swift in Sources */,
 				3019A20A1E5189BE000543A0 /* AppDelegate.swift in Sources */,
+				3019A2571E51A8DE000543A0 /* HYLiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,25 +355,6 @@
 			targetProxy = 3019A2261E5189BE000543A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3019A20D1E5189BE000543A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3019A20E1E5189BE000543A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3019A2121E5189BE000543A0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3019A2131E5189BE000543A0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3019A22C1E5189BE000543A0 /* Debug */ = {
@@ -466,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huaban.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,7 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huaban.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,6 +553,7 @@
 				3019A2301E5189BE000543A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3019A2311E5189BE000543A0 /* Build configuration list for PBXNativeTarget "DouYuZBTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +562,7 @@
 				3019A2331E5189BE000543A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3019A2341E5189BE000543A0 /* Build configuration list for PBXNativeTarget "DouYuZBUITests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +571,7 @@
 				3019A2361E5189BE000543A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
