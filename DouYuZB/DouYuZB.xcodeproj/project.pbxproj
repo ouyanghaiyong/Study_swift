@@ -15,6 +15,8 @@
 		3019A2531E51A8B8000543A0 /* HYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2521E51A8B8000543A0 /* HYHomeViewController.swift */; };
 		3019A2551E51A8D3000543A0 /* HYFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2541E51A8D3000543A0 /* HYFollowViewController.swift */; };
 		3019A2571E51A8DE000543A0 /* HYLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019A2561E51A8DE000543A0 /* HYLiveViewController.swift */; };
+		3032B5521E5308B20032C80A /* HYNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3032B5511E5308B20032C80A /* HYNavigationViewController.swift */; };
+		3032B5541E530C980032C80A /* HYProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3032B5531E530C980032C80A /* HYProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3019A2521E51A8B8000543A0 /* HYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYHomeViewController.swift; sourceTree = "<group>"; };
 		3019A2541E51A8D3000543A0 /* HYFollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYFollowViewController.swift; sourceTree = "<group>"; };
 		3019A2561E51A8DE000543A0 /* HYLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYLiveViewController.swift; sourceTree = "<group>"; };
+		3032B5511E5308B20032C80A /* HYNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYNavigationViewController.swift; sourceTree = "<group>"; };
+		3032B5531E530C980032C80A /* HYProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				3019A2501E51A884000543A0 /* HYMainViewController.swift */,
+				3032B5511E5308B20032C80A /* HYNavigationViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 		3019A23E1E518EFF000543A0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3032B5531E530C980032C80A /* HYProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -318,7 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3019A2531E51A8B8000543A0 /* HYHomeViewController.swift in Sources */,
+				3032B5541E530C980032C80A /* HYProfileViewController.swift in Sources */,
 				3019A2511E51A884000543A0 /* HYMainViewController.swift in Sources */,
+				3032B5521E5308B20032C80A /* HYNavigationViewController.swift in Sources */,
 				3019A2551E51A8D3000543A0 /* HYFollowViewController.swift in Sources */,
 				3019A20A1E5189BE000543A0 /* AppDelegate.swift in Sources */,
 				3019A2571E51A8DE000543A0 /* HYLiveViewController.swift in Sources */,
